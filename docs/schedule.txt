@@ -1,0 +1,10 @@
+08:00 AM > Hands-on-Lab Overview / Resource Check
+08:10 AM > Discussion - The Language Dilemma
+08:25 AM > Lab Exercises 1
+09:00 AM > Break - Q&A and Bug Fix Time
+09:15 AM > Lab Exercises 2
+10:30 AM > Break - Q&A and Bug Fix Time
+10:45 AM > Lab Exercises 3
+11:30 AM > Break - Q&A and Bug Fix Time
+11:45 AM > Hands-on-Lab Review / Discussion / Questions
+12:00 PM > End of Hands-on-Lab
