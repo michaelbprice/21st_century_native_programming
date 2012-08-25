@@ -12,8 +12,21 @@
     <ClCompile Include="pch.cpp">
       <Filter>Source Files\Generated</Filter>
     </ClCompile>
-    <ClCompile Include=".\MyValueType.cpp" />
-    <ClCompile Include="MyInterfaces.cpp" />
+    <ClCompile Include="MyProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyInterfaces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\MyValueType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\MyPartialType_partial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPartialType_complete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -22,7 +35,20 @@
     <ClInclude Include="targetver.h">
       <Filter>Source Files\Generated</Filter>
     </ClInclude>
-    <ClInclude Include=".\MyValueType.h" />
-    <ClInclude Include="MyInterfaces.h" />
+    <ClInclude Include="MyProperties.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyInterfaces.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\MyValueType.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\MyPartialType_partial.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPartialType_complete.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

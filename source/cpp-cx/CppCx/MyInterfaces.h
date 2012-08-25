@@ -1,4 +1,3 @@
-#pragma once
 
 #ifndef INCL_MYINTERFACES_H
 #define INCL_MYINTERFACES_H
