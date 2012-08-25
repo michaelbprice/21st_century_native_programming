@@ -9,22 +9,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CppCx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files\Generated</Filter>
     </ClCompile>
+    <ClCompile Include=".\MyValueType.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CppCx.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>Source Files\Generated</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Source Files\Generated</Filter>
     </ClInclude>
+    <ClInclude Include=".\MyValueType.h" />
   </ItemGroup>
 </Project>
