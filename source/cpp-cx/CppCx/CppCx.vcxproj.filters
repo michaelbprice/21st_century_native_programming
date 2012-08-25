@@ -13,6 +13,7 @@
       <Filter>Source Files\Generated</Filter>
     </ClCompile>
     <ClCompile Include=".\MyValueType.cpp" />
+    <ClCompile Include="MyInterfaces.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -22,5 +23,6 @@
       <Filter>Source Files\Generated</Filter>
     </ClInclude>
     <ClInclude Include=".\MyValueType.h" />
+    <ClInclude Include="MyInterfaces.h" />
   </ItemGroup>
 </Project>
