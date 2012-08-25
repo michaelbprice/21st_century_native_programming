@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppCx", "CppCx\CppCx.vcxproj", "{F553804C-4D51-47F1-BA7E-CD951FE41789}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppCxTest", "CppCxTest\CppCxTest.vcxproj", "{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Debug|ARM.ActiveCfg = Debug|ARM
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Debug|ARM.Build.0 = Debug|ARM
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Debug|ARM.Deploy.0 = Debug|ARM
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Debug|Win32.ActiveCfg = Debug|Win32
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Debug|Win32.Build.0 = Debug|Win32
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Debug|Win32.Deploy.0 = Debug|Win32
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Debug|x64.ActiveCfg = Debug|x64
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Debug|x64.Build.0 = Debug|x64
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Debug|x64.Deploy.0 = Debug|x64
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Release|ARM.ActiveCfg = Release|ARM
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Release|ARM.Build.0 = Release|ARM
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Release|ARM.Deploy.0 = Release|ARM
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Release|Win32.ActiveCfg = Release|Win32
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Release|Win32.Build.0 = Release|Win32
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Release|Win32.Deploy.0 = Release|Win32
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Release|x64.ActiveCfg = Release|x64
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Release|x64.Build.0 = Release|x64
+		{97684531-BEDB-41E7-BDA5-A5D5BB1B8062}.Release|x64.Deploy.0 = Release|x64
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Debug|ARM.Build.0 = Debug|ARM
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Debug|Win32.Build.0 = Debug|Win32
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Debug|x64.ActiveCfg = Debug|x64
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Debug|x64.Build.0 = Debug|x64
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Release|ARM.ActiveCfg = Release|ARM
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Release|ARM.Build.0 = Release|ARM
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Release|Win32.ActiveCfg = Release|Win32
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Release|Win32.Build.0 = Release|Win32
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Release|x64.ActiveCfg = Release|x64
+		{F553804C-4D51-47F1-BA7E-CD951FE41789}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
