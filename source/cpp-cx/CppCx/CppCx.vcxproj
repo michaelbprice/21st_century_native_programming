@@ -187,6 +187,7 @@
     <ClInclude Include=".\MyGenerics.h" />
     <ClInclude Include="MyDelegateAndEvent.h" />
     <ClInclude Include="MyInterfaces.h" />
+    <ClInclude Include=".\MyAccessibility.h" />
     <ClInclude Include="MyPartialType_complete.h" />
     <ClInclude Include="MyProperties.h" />
     <ClInclude Include="pch.h" />
@@ -198,6 +199,7 @@
     <ClCompile Include="MyGenerics.cpp" />
     <ClCompile Include="MyInterfaces.cpp" />
     <ClCompile Include=".\MyPartialType_partial.cpp" />
+    <ClCompile Include=".\MyAccessibility.cpp" />
     <ClCompile Include="MyPartialType_complete.cpp" />
     <ClCompile Include="MyProperties.cpp" />
     <ClCompile Include="pch.cpp">
