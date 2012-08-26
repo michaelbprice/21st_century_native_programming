@@ -184,6 +184,7 @@
   <ItemGroup>
     <ClInclude Include=".\MyValueType.h" />
     <ClInclude Include=".\MyPartialType_partial.h" />
+    <ClInclude Include=".\MyGenerics.h" />
     <ClInclude Include="MyDelegateAndEvent.h" />
     <ClInclude Include="MyInterfaces.h" />
     <ClInclude Include="MyPartialType_complete.h" />
@@ -194,6 +195,7 @@
   <ItemGroup>
     <ClCompile Include=".\MyValueType.cpp" />
     <ClCompile Include="MyDelegateAndEvent.cpp" />
+    <ClCompile Include="MyGenerics.cpp" />
     <ClCompile Include="MyInterfaces.cpp" />
     <ClCompile Include=".\MyPartialType_partial.cpp" />
     <ClCompile Include="MyPartialType_complete.cpp" />
