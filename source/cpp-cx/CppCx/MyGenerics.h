@@ -3,10 +3,12 @@
 
 #include <iostream>
 
+namespace CppCx { namespace Generics {
+
 generic <typename T>
 interface class IMyGenericPrinter
 {
-	void Print(T thing);
+    void Print(T thing);
 };
 
 // Strategy #1: Implement the generic for every potential type
@@ -106,5 +108,7 @@ void doPrint<Platform::String ^> (Platform::String ^ thing)
     else
         std::wcout << thing->Data() << std::endl;
 }
+
+} } // namespace CppCx::Generics
 
 #endif // INCL_MYGENERICS_H

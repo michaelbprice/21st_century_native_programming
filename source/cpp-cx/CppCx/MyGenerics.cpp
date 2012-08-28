@@ -6,6 +6,8 @@
 using namespace std;
 using namespace Platform;
 
+namespace CppCx { namespace Generics {
+
 void MyObjectPrinter::Print(Object ^ thing)
 {
     if (thing == nullptr)
@@ -31,3 +33,5 @@ void MyDoublePrinter::Print(double thing)
 {
     wcout << thing << endl;
 }
+
+} } // namespace CppCx::Generics

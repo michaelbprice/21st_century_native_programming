@@ -2,7 +2,7 @@
 #include "MyAccessibility.h"
 #include <string>
 
-namespace MyNamespace {
+namespace CppCx { namespace Accessibility {
 
 using namespace std;
 using namespace Platform;
@@ -33,4 +33,4 @@ Platform::String ^ MyPublicType::GetNameForChildren ()
 }
 
 
-} // namespace MyNamespace
+} } // namespace CppCx::Accessiblity

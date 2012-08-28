@@ -5,6 +5,8 @@ using namespace Platform;
 using namespace Platform::Collections;
 using namespace Windows::Foundation::Collections;
 
+namespace CppCx { namespace DelegateAndEvent {
+
 MyDelegateAndEvent::MyDelegateAndEvent ()
 {
     m_names = ref new Vector<String ^>();
@@ -17,3 +19,5 @@ MyDelegateAndEvent::MyDelegateAndEvent ()
         this->Changed();
     });
 }
+
+} } // namespace CppCx::DelegateAndEvent

@@ -4,6 +4,8 @@
 
 #include <collection.h>
 
+namespace CppCx { namespace Interfaces {
+
 delegate void FinishedEventHandler (Platform::String ^ id);
 
 interface class IMyInterface
@@ -36,5 +38,7 @@ private:
     Platform::String ^ m_name;
     Platform::Collections::Vector<Platform::String ^> ^ m_completed;
 };
+
+} } // namespace CppCx::Interfaces
 
 #endif // INCL_MYINTERFACES_H

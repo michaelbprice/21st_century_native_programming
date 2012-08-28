@@ -6,7 +6,7 @@
 struct SomeCppType
 { };
 
-namespace MyNamespace {
+namespace CppCx { namespace Accessibility {
 
 // Will generate WinRT metadata
 //
@@ -69,7 +69,7 @@ public:
 
 };
 
-} // namespace MyNamespace
+}  } // namespace CppCx::Accessibility
 
 
 public ref class MyInvalidType

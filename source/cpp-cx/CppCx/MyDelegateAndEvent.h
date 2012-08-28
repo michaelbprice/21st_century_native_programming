@@ -4,6 +4,8 @@
 #include <vector>
 #include "collection.h"
 
+namespace CppCx { namespace DelegateAndEvent {
+
 delegate void OnChanged ();
 
 ref class MyDelegateAndEvent sealed
@@ -16,5 +18,7 @@ public:
 private:
     Platform::Collections::Vector<Platform::String ^> ^ m_names;
 };
+
+} } // namespace CppCx::DelegateAndEvent
 
 #endif // INCL_MYDELEGATEANDEVENT_H

@@ -6,6 +6,8 @@
 using namespace std;
 using namespace Platform;
 
+namespace CppCx { namespace Interfaces {
+
 void MyImplementation::Finish (String ^ id)
 {
     m_completed->Append(id);
@@ -19,3 +21,5 @@ bool MyImplementation::IsFinished (String ^ id)
 
     return result != end(m_completed);
 }
+
+} } // namespace CppCx::Interfaces

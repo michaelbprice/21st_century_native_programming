@@ -3,10 +3,14 @@
 
 #include "MyPartialType_partial.h"
 
+namespace CppCx { namespace Partial {
+
 ref class MyPartialType sealed
 {
 public:
     MyPartialType ();
 };
+
+} } // namespace CppCx::Partial
 
 #endif // INCL_MYPARTIALTYPE_COMPLETE_H
