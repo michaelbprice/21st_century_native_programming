@@ -7,8 +7,10 @@ using namespace Windows::Foundation::Collections;
 
 namespace CppCx { namespace DelegateAndEvent {
 
-MyDelegateAndEvent::MyDelegateAndEvent ()
+MyDelegateAndEvent::MyDelegateAndEvent (ChangedEventHandler ^ onChanged)
 {
+    Changed += onChanged;
+
     m_names = ref new Vector<String ^>();
 
     m_names->VectorChanged += ref new VectorChangedEventHandler<String^>([this](IObservableVector<String^> ^ sender, 
@@ -18,6 +20,11 @@ MyDelegateAndEvent::MyDelegateAndEvent ()
         //
         this->Changed();
     });
+}
+
+void MyDelegateAndEvent::AddString (String ^ s)
+{
+    m_names->Append(s);
 }
 
 } } // namespace CppCx::DelegateAndEvent

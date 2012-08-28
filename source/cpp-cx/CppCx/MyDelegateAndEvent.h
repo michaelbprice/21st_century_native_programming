@@ -6,14 +6,16 @@
 
 namespace CppCx { namespace DelegateAndEvent {
 
-delegate void OnChanged ();
+public delegate void ChangedEventHandler ();
 
-ref class MyDelegateAndEvent sealed
+public ref class MyDelegateAndEvent sealed
 {
 public:
-    MyDelegateAndEvent ();
+    MyDelegateAndEvent (ChangedEventHandler ^ onChanged);
 
-    event OnChanged ^ Changed;
+    void AddString (Platform::String ^ s);
+
+    event ChangedEventHandler ^ Changed;
 
 private:
     Platform::Collections::Vector<Platform::String ^> ^ m_names;

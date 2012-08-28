@@ -228,6 +228,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="TestCasting.cpp" />
+    <ClCompile Include="TestDelegateAndEventcpp.cpp" />
     <ClCompile Include="TestExceptions.cpp" />
   </ItemGroup>
   <ItemGroup>
