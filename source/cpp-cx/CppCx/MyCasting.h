@@ -3,25 +3,24 @@
 
 namespace CppCx { namespace Casting {
 
-value struct MyValueType
+public value struct MyValueType
 {
     int member;
 };
 
-interface class MyInterfaceType
+public interface class MyInterfaceType
 {
 };
 
-interface class MyOtherInterfaceType
+public interface class MyOtherInterfaceType
 {
 };
 
-ref class MyRefType : public MyInterfaceType
+public ref class MyRefType : public MyInterfaceType
 {
 };
 
-ref class MyDerivedRefType sealed : public MyRefType
-                                  , public MyOtherInterfaceType
+public ref class MyDerivedRefType sealed : public MyRefType
 {
 };
 
