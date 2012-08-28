@@ -3,7 +3,7 @@
 
 namespace CppCx { namespace Exceptions {
 
-public ref class Thrower
+public ref class Thrower sealed
 {
 public:
     void ThrowCppException ();

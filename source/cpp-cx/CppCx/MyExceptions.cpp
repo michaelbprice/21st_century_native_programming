@@ -12,7 +12,7 @@ void Thrower::ThrowCppException ()
 
 void Thrower::ThrowCustomException ()
 {
-    throw ref new Platform::COMException(0, "Customized!");
+    throw ref new Platform::COMException(E_NOT_SET, "Customized!");
 }
 
 void Thrower::ThrowWinRtException ()
