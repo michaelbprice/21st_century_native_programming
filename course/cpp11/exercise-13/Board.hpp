@@ -50,23 +50,15 @@ class Board final
     void placeStoneAt (const PointCoords & coords, std::unique_ptr<Stone> stone);
     size_t removeCapturedStones (StoneColor colorToCapture);
 
-    //template <typename FnOnVisit>
-    void visitNeighboringPoints (const Point & point, const PointVisitorFn & visitorFn) const
-    {
-        visitorFn(getPointAbove(point));
-        visitorFn(getPointBelow(point));
-        visitorFn(getPointLeft(point));
-        visitorFn(getPointRight(point));
-    }
+    const Point & getPointAbove (const Point & point) const;
+    const Point & getPointBelow (const Point & point) const;
+    const Point & getPointLeft (const Point & point) const;
+    const Point & getPointRight (const Point & point) const;
 
  private:
 
     Chain calculateChain (const PointCoords & coords);
     bool doesKoRuleApply (const Chain & chain) const;
-    const Point & getPointAbove (const Point & point) const;
-    const Point & getPointBelow (const Point & point) const;
-    const Point & getPointLeft (const Point & point) const;
-    const Point & getPointRight (const Point & point) const;
 };
 
 }

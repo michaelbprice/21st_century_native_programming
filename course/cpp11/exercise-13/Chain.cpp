@@ -76,29 +76,34 @@ void Chain::doChainCalculation (const Point & point, const Board & board, ConstP
     // if it a)belongs to the current chain, b)belongs to an opponent's
     // chain, or c)belongs to an "empty" chain
     //
-    board.visitNeighboringPoints(point, [&] (const Point & testPoint)
-    {
-        if ((&testPoint != &m_startPoint) && (&testPoint != &point))
-        {
-            // If the point we're testing has a stone whose color matchers
-            // our own, then recurse on that point; otherwise insert the
-            // point into the appropriate map
-            //
-            if (testPoint.getStoneColor() == m_color)
-            {
-                doChainCalculation(testPoint, board, pointsToIgnore);
-            }
-            else
-            {
-                ConstPointSet & set = m_chainAndNeighbors.at(testPoint.getStoneColor());
+    doTest(board.getPointAbove(point), point);
+    doTest(board.getPointBelow(point), point);
+    doTest(board.getPointLeft(point), point);
+    doTest(board.getPointRight(point), point);
+}
 
-                if (set.find(&testPoint) == set.end())
-                {
-                    set.insert(&testPoint);
-                }
+void Chain::doTest (const Point & testPoint, const Point & point)
+{
+    if ((&testPoint != &m_startPoint) && (&testPoint != &point))
+    {
+        // If the point we're testing has a stone whose color matchers
+        // our own, then recurse on that point; otherwise insert the
+        // point into the appropriate map
+        //
+        if (testPoint.getStoneColor() == m_color)
+        {
+            doChainCalculation(testPoint, board, pointsToIgnore);
+        }
+        else
+        {
+            ConstPointSet & set = m_chainAndNeighbors.at(testPoint.getStoneColor());
+
+            if (set.find(&testPoint) == set.end())
+            {
+                set.insert(&testPoint);
             }
         }
-    });
+    }    
 }
 
 size_t Chain::borderCountOf (StoneColor color)
@@ -115,6 +120,16 @@ StoneColor Chain::color () const
     LOG_BUSY_FUNCTION(cout, "Chain::color");
  
     return m_color;
+}
+
+ConstPointSet & Chain::getPointsInChain () const
+{
+    return getSurroundingPoints(m_color);
+}
+
+ConstPointSet & Chain::getSurroundingPoints (StoneColor color) const
+{
+    return m_chainAndNeighbors[color];
 }
 
 size_t Chain::libertyCount () const

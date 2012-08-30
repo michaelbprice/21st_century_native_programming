@@ -42,11 +42,6 @@ class Point final
     void removeStone ();
 };
 
-//using PointSet = std::unordered_set<Point*>;
-//using ConstPointSet = std::unordered_set<const Point*>;
-
-//using PointVisitorFn = std::function<void(const Point &)>;
-
 } // namespace Go
 
 

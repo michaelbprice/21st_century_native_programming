@@ -36,25 +36,14 @@ class Chain
     size_t borderCountOf (StoneColor color);
     StoneColor color () const;
     bool containsPoint (const Point & point) const;
-
-     //template <typename Fn>
-    void forEachPoint (const PointVisitorFn & visitorFn)
-    {
-        forEachSurroundingPoint(m_color, visitorFn);
-    }
-
-    //template <typename Fn>
-    void forEachSurroundingPoint (StoneColor color, const PointVisitorFn & visitorFn)
-    {
-        for (auto & p : m_chainAndNeighbors[color])
-            visitorFn(*p);
-    }
-
+    ConstPointSet & getPointsInChain () const;
+    ConstPointSet & getSurroundingPoints (StoneColor color) const;
     size_t libertyCount () const;
     size_t size () const;
 
  private:
     void doChainCalculation (const Point & point, const Board & board, ConstPointSet & pointsToIgnore);
+    void doTest (const Point & testPoint, const Point & point);
 };
 
 } // namespace Go

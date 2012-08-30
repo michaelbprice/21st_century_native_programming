@@ -12,8 +12,6 @@ class PointCoords;
 using PointSet = std::unordered_set<Point*>;
 using ConstPointSet = std::unordered_set<const Point*>;
 
-using PointVisitorFn = std::function<void(const Point &)>;
-
 } // namespace Go
 
 #endif /* end of include guard: INCL_POINT_FWD_HPP__ */

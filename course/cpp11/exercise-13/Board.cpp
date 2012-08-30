@@ -206,8 +206,7 @@ bool Board::isValidMove (StoneColor stoneColor, const PointCoords & coords) cons
     // taken by this move) and the 'Ko' rule does not apply, then we would
     // in fact capture at least one opponent stone.
     // 
-    potentialChain.forEachSurroundingPoint(getOpposingColor(stoneColor),
-    [this, &alreadyVisited, &wouldCaptureOpponentChain](const Point & point)
+    for (const auto & point : potentialChain.getSurroundingPoints(getOpposingColor(stoneColor)))
     {
         LOG_FUNCTION(cout, "Board::lambda_wouldCapture");
 
@@ -238,7 +237,7 @@ bool Board::isValidMove (StoneColor stoneColor, const PointCoords & coords) cons
         {
             gLogger.log(LogLevel::kFirehose, cout, "Skipping ", point);
         }
-    });
+    }
 
     // If making this move would result in our chain not having any liberties,
     // it is only valid if we end up capturing an opposing chain (per the
@@ -308,11 +307,11 @@ size_t Board::removeCapturedStones (StoneColor colorToCapture)
                     // For each point in the chain, remove the stone from the board
                     // at those coordniates
                     //
-                    currentChain.forEachPoint([this](const Point & point)
+                    for (const auto & point : currentChain.getPointsInChain())
                     {
                         LOG_BUSY_FUNCTION(cout, "Chain::removeCapturedStones::lambda_doStoneRemoval");
                         m_points[point.coordinates.row][point.coordinates.column].removeStone();
-                    }); 
+                    }; 
                 }
             }
             catch (const Chain::PointVisitedAlreadyException & ex)
