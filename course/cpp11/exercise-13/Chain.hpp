@@ -36,14 +36,14 @@ class Chain
     size_t borderCountOf (StoneColor color);
     StoneColor color () const;
     bool containsPoint (const Point & point) const;
-    ConstPointSet & getPointsInChain () const;
-    ConstPointSet & getSurroundingPoints (StoneColor color) const;
+    ConstPointSet & getPointsInChain ();
+    ConstPointSet & getSurroundingPoints (StoneColor color);
     size_t libertyCount () const;
     size_t size () const;
 
  private:
     void doChainCalculation (const Point & point, const Board & board, ConstPointSet & pointsToIgnore);
-    void doTest (const Point & testPoint, const Point & point);
+    void doTest (const Point & testPoint, const Board & board, const Point & point, ConstPointSet & pointsToIgnore);
 };
 
 } // namespace Go

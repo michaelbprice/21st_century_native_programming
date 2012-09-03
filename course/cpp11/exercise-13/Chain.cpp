@@ -76,13 +76,13 @@ void Chain::doChainCalculation (const Point & point, const Board & board, ConstP
     // if it a)belongs to the current chain, b)belongs to an opponent's
     // chain, or c)belongs to an "empty" chain
     //
-    doTest(board.getPointAbove(point), point);
-    doTest(board.getPointBelow(point), point);
-    doTest(board.getPointLeft(point), point);
-    doTest(board.getPointRight(point), point);
+    doTest(board.getPointAbove(point), board, point, pointsToIgnore);
+    doTest(board.getPointBelow(point), board, point, pointsToIgnore);
+    doTest(board.getPointLeft(point), board, point, pointsToIgnore);
+    doTest(board.getPointRight(point), board, point, pointsToIgnore);
 }
 
-void Chain::doTest (const Point & testPoint, const Point & point)
+void Chain::doTest (const Point & testPoint, const Board & board, const Point & point, ConstPointSet & pointsToIgnore)
 {
     if ((&testPoint != &m_startPoint) && (&testPoint != &point))
     {
@@ -122,12 +122,12 @@ StoneColor Chain::color () const
     return m_color;
 }
 
-ConstPointSet & Chain::getPointsInChain () const
+ConstPointSet & Chain::getPointsInChain ()
 {
     return getSurroundingPoints(m_color);
 }
 
-ConstPointSet & Chain::getSurroundingPoints (StoneColor color) const
+ConstPointSet & Chain::getSurroundingPoints (StoneColor color)
 {
     return m_chainAndNeighbors[color];
 }
