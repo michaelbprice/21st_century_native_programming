@@ -14,7 +14,7 @@ namespace CppCxTest
 		{
             bool wasCalled = false;
 
-			MyDelegateAndEvent ^ test = ref new MyDelegateAndEvent(ref new ChangedEventHandler([&]()
+			MyDelegateAndEvent ^ test = ref new MyDelegateAndEvent(ref new ChangedEventHandler([&wasCalled]()
             {
                 wasCalled = true;
             }));
@@ -26,7 +26,7 @@ namespace CppCxTest
 		{
             bool wasCalled = false;
 
-			MyDelegateAndEvent ^ test = ref new MyDelegateAndEvent(ref new ChangedEventHandler([&]()
+			MyDelegateAndEvent ^ test = ref new MyDelegateAndEvent(ref new ChangedEventHandler([&wasCalled]()
             {
                 wasCalled = true;
             }));
