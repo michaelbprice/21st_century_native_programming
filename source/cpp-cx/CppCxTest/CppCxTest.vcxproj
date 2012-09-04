@@ -230,6 +230,7 @@
     <ClCompile Include="TestCasting.cpp" />
     <ClCompile Include="TestDelegateAndEventcpp.cpp" />
     <ClCompile Include="TestExceptions.cpp" />
+    <ClCompile Include="TestValueType.cpp" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="CppUnitTestFramework, Version=11.0" />
