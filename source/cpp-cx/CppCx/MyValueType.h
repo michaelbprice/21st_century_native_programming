@@ -15,7 +15,7 @@ namespace CppCx { namespace ValueType {
     // There is not very many reasons to make a WinRT value type be a class, as you
     // cannot have any public methods and they cannot be derived from (see errors C3417, C3983, C3194)
     //
-    value struct MyValueType
+    public value struct MyValueType
     {
         int m_integer;
         Platform::String ^ m_string;
@@ -27,14 +27,13 @@ namespace CppCx { namespace ValueType {
     // they can only derive from interfaces, although they cannot implement the
     // interface because they cannot have public methods
     //
-    interface struct IStructInterface
-    {
-        //bool m_valid;       //  errorz C2844 and C3984
-        //bool IsValid ();    // causes error C3246
-    };
-
-    ref class MyInheritedValueType : public IStructInterface
-    { };
+    //interface struct IStructInterface
+    //{ };
+    //
+    //value struct MyInheritedValueType : public IStructInterface // error C3994
+    //{
+    //    bool dummy;
+    //};
 
 } } // namespace CppCx::ValueType
 
