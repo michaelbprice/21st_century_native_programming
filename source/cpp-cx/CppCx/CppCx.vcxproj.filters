@@ -39,9 +39,6 @@
     <ClCompile Include="MyCasting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MyGenerics.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -66,9 +63,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="MyDelegateAndEvent.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include=".\MyGenerics.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include=".\MyAccessibility.h">
