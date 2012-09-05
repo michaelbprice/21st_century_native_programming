@@ -72,7 +72,7 @@ public:
 }  } // namespace CppCx::Accessibility
 
 
-public ref class MyInvalidType
+public ref class MyInvalidType // should not be sent to metadata... is in RC
 { };
 
 #endif // INCL_MYACCESSIBILITY_H
