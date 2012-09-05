@@ -35,13 +35,13 @@
     <ClCompile Include="TestExceptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestDelegateAndEventcpp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TestValueType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TestReferenceType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\TestDelegateAndEvent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

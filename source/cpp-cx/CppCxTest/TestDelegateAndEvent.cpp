@@ -6,7 +6,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace CppCxTest
 {
-	TEST_CLASS(TestDelegateAndEventcpp)
+	TEST_CLASS(TestDelegateAndEvent)
 	{
 	public:
 		
