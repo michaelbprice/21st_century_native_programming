@@ -6,9 +6,9 @@
 
 namespace CppCx { namespace Interfaces {
 
-delegate void FinishedEventHandler (Platform::String ^ id);
+public delegate void FinishedEventHandler (Platform::String ^ id);
 
-interface class IMyInterface
+public interface class IMyInterface
 {
     void Finish (Platform::String ^id);
 
@@ -17,16 +17,17 @@ interface class IMyInterface
     event FinishedEventHandler ^ OnFinished;
 };
 
-interface class IMyDerivedInterface : public IMyInterface
+public interface class IMyDerivedInterface : public IMyInterface
 {
     property Platform::String ^ Name;
 };
 
-interface class ISomeOtherInterface
+public interface class ISomeOtherInterface
 {
 };
 
-ref class MyImplementation : public IMyDerivedInterface, public ISomeOtherInterface
+public ref class MyImplementation sealed : public IMyDerivedInterface
+                                         , public ISomeOtherInterface
 {
 public:
     virtual property Platform::String ^ Name;
