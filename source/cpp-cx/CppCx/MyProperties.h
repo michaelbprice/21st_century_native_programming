@@ -5,9 +5,11 @@
 
 namespace CppCx { namespace Properties {
 
-    ref class MyProperties
+    public ref class MyProperties sealed
     {
     public:
+        MyProperties ();
+
         // Implicitly backed, read-write
         //
         property Platform::String ^ Name_ReadWrite;

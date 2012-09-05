@@ -231,6 +231,7 @@
     <ClCompile Include=".\TestDelegateAndEvent.cpp" />
     <ClCompile Include="TestExceptions.cpp" />
     <ClCompile Include="TestInterfaces.cpp" />
+    <ClCompile Include="TestProperties.cpp" />
     <ClCompile Include="TestReferenceType.cpp" />
     <ClCompile Include="TestValueType.cpp" />
   </ItemGroup>
